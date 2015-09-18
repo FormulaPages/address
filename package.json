@@ -1,0 +1,30 @@
+{
+  "name": "formula-address",
+  "version": "1.0.0",
+  "description": "A col/row to address string mapper.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FormulaPages/address.git"
+  },
+  "keywords": [
+    "Spreadsheet",
+    "Formula",
+    "JavaScript"
+  ],
+  "author": "Peter Moresi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FormulaPages/address/issues"
+  },
+  "homepage": "https://github.com/FormulaPages/address#readme",
+  "dependencies": {
+    "formula-tocolumn": "^1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.2"
+  }
+}
