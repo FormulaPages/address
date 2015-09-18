@@ -5,4 +5,3 @@ Absolute Relative Modes:
 1. Both
 2. Row
 3. Column
-# math
