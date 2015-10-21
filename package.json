@@ -1,10 +1,10 @@
 {
   "name": "formula-address",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A col/row to address string mapper.",
-  "main": "index.js",
+  "main": "ADDRESS.js",
   "scripts": {
-    "test": "mocha tests"
+    "test": "node tests"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,8 @@
     "url": "https://github.com/FormulaPages/address/issues"
   },
   "homepage": "https://github.com/FormulaPages/address#readme",
-  "dependencies": {
-    "formula-tocolumn": "^1.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "mocha": "^2.3.2"
+    "tape": "^4.2.2"
   }
 }

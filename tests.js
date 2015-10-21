@@ -1,18 +1,17 @@
-var assert = require('assert');
-var testCase = require('mocha').describe;
+var test = require('tape');
+var addr = require('./ADDRESS');
 
-testCase('address', function() {
+test('address', function(t) {
 
-    var addr = require('./index');
+  t.plan(8);
 
-    it('it should be there when you require it', function () {
-      assert( typeof addr !== undefined, 'not there for me');
-    });
-
-    it('it should have basic competencies', function () {
-      assert( addr(1, 1) === '$A$1', 'not there for me: ' + addr(1, 1));
-      assert( addr(10, 1) === '$A$10', 'not there for me: ' + addr(10, 1));
-      assert( addr(42, 42) === '$AP$42', 'not there for me: ' + addr(42, 42));
-    });
+  t.notEqual( typeof addr, 'undefined', 'Address API present');
+  t.equal( addr(1, 1, 0), 'A1' );
+  t.equal( addr(1, 1), '$A$1' );
+  t.equal( addr(1, 1, 1), '$A$1' );
+  t.equal( addr(10, 1), '$A$10');
+  t.equal( addr(42, 42), '$AP$42');
+  t.equal( addr(42, 42, 2), 'AP$42');
+  t.equal( addr(42, 42, 3), '$AP42');
 
 });
